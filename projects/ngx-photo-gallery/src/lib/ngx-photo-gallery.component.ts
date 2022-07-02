@@ -1,20 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
+import {Gallery} from "../../../demo/src/app/modals/gallery";
 
 @Component({
-  selector: 'lib-ngx-photo-gallery',
-  template: `
-    <p>
-      ngx-photo-gallery works!
-    </p>
-  `,
-  styles: [
-  ]
+  selector: 'ngx-photo-gallery',
+  templateUrl: './ngx-photo-gallery.component.html',
+  styleUrls: ['./ngx-photo-gallery.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
-export class NgxPhotoGalleryComponent implements OnInit {
+export class NgxPhotoGalleryComponent{
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
+
+  @Input() images: Array<Gallery> = [];
+  @Input() albumTitle = '';
+  @Input() searchAlt = '';
+  @Input() brightness = '1';
+  @Input() searchImageBase64 = '';
 
 }
