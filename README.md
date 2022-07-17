@@ -4,7 +4,7 @@
 
 [![NPM version][npm-image]][npm-url]
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?color=blue&style=flat-square)](http://opensource.org/licenses/MIT)
-[![The MIT License](https://img.shields.io/npm/dt/ngx-nic-parser?style=flat-square)]()
+[![The MIT License](https://img.shields.io/npm/dt/ngx-photo-gallery?style=flat-square)]()
 
 ## Getting started
 
@@ -14,7 +14,7 @@
    ng add @ng-bootstrap/ng-bootstrap
 ```
 
-#### Step 2: Install ngx-nic-parser
+#### Step 2: Install ngx-photo-gallery
 
 ```bash
     npm install ngx-photo-gallery --save
@@ -49,7 +49,7 @@ Add the element to your HTML:
 And add this to your ts file:
 ```js
 
-export class AppComponent {
+ export class AppComponent {
   gallery = [
     {
       type: 'photo',
@@ -71,8 +71,7 @@ export class AppComponent {
 }
 
 ```
-### Output
-![alt text](./view.gif)
+###[Demo](https://github.com/chiradenuwan/ngx-photo-gallery/blob/master/view.gif?raw=true)
 
 ## Inputs
 | Name                    | Type      | Default      | Description                                                                                                                                                                                                                          |
@@ -83,5 +82,5 @@ export class AppComponent {
 | `searchImageBase64`                | string    |   null        | search icon base64.                                                                                                         |
 | `searchAlt`           | string    |   null    | Images alt.                                                                                                                                                                |
 
-[npm-url]: https://www.npmjs.com/package/ngx-nic-parser
-[npm-image]: https://img.shields.io/npm/v/ngx-nic-parser?style=flat-square
+[npm-url]: https://www.npmjs.com/package/ngx-photo-gallery
+[npm-image]: https://img.shields.io/npm/v/ngx-photo-gallery?style=flat-square

@@ -14,7 +14,7 @@
    ng add @ng-bootstrap/ng-bootstrap
 ```
 
-#### Step 2: Install ngx-nic-parser
+#### Step 2: Install ngx-photo-gallery
 
 ```bash
     npm install ngx-photo-gallery --save
@@ -25,11 +25,11 @@ Add the NgxPhotoGalleryModule to the imports of the module.
 ```js
       import {NgxPhotoGalleryModule} from "ngx-photo-gallery";
 
-      @NgModule({
-        imports: [
-          NgxPhotoGalleryModule
-        ]
-      })
+@NgModule({
+  imports: [
+    NgxPhotoGalleryModule
+  ]
+})
 ```
 
 Add the element to your HTML:
@@ -71,8 +71,7 @@ export class AppComponent {
 }
 
 ```
-### Output
-![alt text](./../../view.gif)
+###[Demo](https://github.com/chiradenuwan/ngx-photo-gallery/blob/master/view.gif?raw=true)
 
 ## Inputs
 | Name                    | Type      | Default      | Description                                                                                                                                                                                                                          |
