@@ -3,7 +3,7 @@
 </div>
 <div class="container card-columns mb-5">
   <div *ngFor="let item of images" class="card gallery-box">
-    <img *ngIf="item.type=='photo'" [src]="item.url" [alt]="item.description"
+    <img *ngIf="item.type=='photo'" [src]="item.url"
          class="card-img-top" width="100%" [style.filter]="'brightness(' + brightness + ')'">
     <div class="gal-overlay">
       <img class="search" [src]="searchImageBase64|safeUrl" [alt]="searchAlt">

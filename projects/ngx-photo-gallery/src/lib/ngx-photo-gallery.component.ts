@@ -1,5 +1,4 @@
-import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
-import {Gallery} from "../../../demo/src/app/modals/gallery";
+import {Component, Input, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'ngx-photo-gallery',
@@ -12,7 +11,7 @@ export class NgxPhotoGalleryComponent{
   constructor() {
   }
 
-  @Input() images: Array<Gallery> = [];
+  @Input() images: Array<{type: string,url: string}> = [];
   @Input() albumTitle = '';
   @Input() searchAlt = '';
   @Input() brightness = '1';
